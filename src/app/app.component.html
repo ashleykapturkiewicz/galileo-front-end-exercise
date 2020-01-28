@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Master Provider View</h1>
+
+  <div class="rightGroup">
+    <div class="userPlaceholder">
+      <h2 class="user">User</h2>
+    </div>
+    <app-add-provider (addedDoctors)="getAdded($event)"></app-add-provider>
+  </div>
+  <div>
+    <app-added-doctors [addedDoctors]="addedDoctors"></app-added-doctors>
+  </div>
+</div>
